@@ -1,0 +1,9 @@
+
+project/metals.sbt
+/bin/
+project/target/
+target/
+.vscode/
+.scalafmt.conf
+.metals/
+.bloop/
