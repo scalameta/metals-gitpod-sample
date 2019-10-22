@@ -4,6 +4,5 @@ project/metals.sbt
 project/target/
 target/
 .vscode/
-.scalafmt.conf
 .metals/
 .bloop/
