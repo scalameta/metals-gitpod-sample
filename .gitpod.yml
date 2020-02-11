@@ -5,3 +5,4 @@ vscode:
     - scalameta.metals@1.7.8:oixMSF1r3cXQPfOQ34+sTA==
 tasks:
 - command: source ./setup_bloop.sh
+- command: source ~/.bloop/bash/bloop
