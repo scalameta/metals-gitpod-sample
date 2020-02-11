@@ -1,4 +1,4 @@
-class ZigZagTest extends org.scalatest.FunSuite {
+class SampleTest extends org.scalatest.FunSuite {
   test("zigzag") {
     assert(1 == 1)
   }
