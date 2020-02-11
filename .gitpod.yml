@@ -1,7 +1,7 @@
 image: openjdk:8
 vscode:
   extensions:
-    - scala-lang.scala@0.3.8:wQBBM+lKILHBqOqlqW60xA==
-    - scalameta.metals@1.6.0:Yi5jjDJjIyozrOuZIWFt/g==
+    - scala-lang.scala@0.3.9:kklqw+c/dNRmtTU8B5repw==
+    - scalameta.metals@1.7.8:oixMSF1r3cXQPfOQ34+sTA==
 tasks:
 - command: source ./setup_bloop.sh
