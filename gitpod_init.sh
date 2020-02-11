@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export PATH=$PATH:/usr/local/openjdk-8/bin
 curl -L https://github.com/scalacenter/bloop/releases/download/v1.4.0-RC1/install.py | python &&
 echo "alias bloop=~/.bloop/bloop" >> ~/.bashrc &&

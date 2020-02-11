@@ -1,3 +1,5 @@
+ #!/bin/bash
+ 
  source ~/.bloop/bash/bloop
  alias bloop=~/.bloop/bloop
  alias sbt=~/sbt/bin/sbt
