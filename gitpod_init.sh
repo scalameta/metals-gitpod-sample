@@ -10,7 +10,7 @@ curl -L https://github.com/scalacenter/bloop/releases/download/v1.4.0-RC1/instal
 python ~/bloop_install.py --dest $METALS_DIR/bloop_local
 curl -L https://piccolo.link/sbt-1.3.9.tgz > ~/sbt.tar.gz
 mkdir -p $METALS_DIR/sbt
-tar -C ~ -xvf ~/sbt.tar.gz -C $METALS_DIR
+tar -xvf ~/sbt.tar.gz -C $METALS_DIR
 
 echo "-Dsbt.coursier.home=$METALS_DIR/coursier" >> .jvmopts
 echo "-Dcoursier.cache=$METALS_DIR/coursier" >> .jvmopts
@@ -26,4 +26,4 @@ source $METALS_DIR/bloop_local/bash/bloop
 alias sbt=$METALS_DIR/sbt/bin/sbt
 alias bloop=$METALS_DIR/bloop_local/bloop
 sbt -Dbloop.export-jar-classifiers=sources bloopInstall
-$METALS_DIR/cs launch ch.epfl.scala:bloopgun-core_2.12:$BLOOP_VERSION -- compile --cascade root
+$METALS_DIR/cs launch ch.epfl.scala:bloopgun-core_2.12:$BLOOP_VERSION --cache=$METALS_DIR/coursier  -- compile --cascade root

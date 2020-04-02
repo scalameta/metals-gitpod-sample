@@ -9,4 +9,4 @@ source $METALS_DIR/bloop_local/bash/bloop
 alias sbt=$METALS_DIR/sbt/bin/sbt
 alias bloop=$METALS_DIR/bloop_local/bloop
 
-$METALS_DIR/cs launch ch.epfl.scala:bloopgun-core_2.12:$BLOOP_VERSION -- about
+$METALS_DIR/cs launch ch.epfl.scala:bloopgun-core_2.12:$BLOOP_VERSION --cache=$METALS_DIR/coursier  -- about
