@@ -11,5 +11,18 @@ object Main {
       case None    => println("Hello <unknown>")
       case Some(x) => println(s"Hello $x")
     }
+
+    val a =
+      """|
+         |
+         |
+         |
+         |
+         |
+         |
+         |""".stripMargin
+
+    val b = ""
+
   }
 }

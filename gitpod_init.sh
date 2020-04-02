@@ -11,7 +11,7 @@ tar -C ~ -xvf ~/sbt.tar.gz -C $(pwd)/.metals
 echo "alias bloop=./.metals/bloop_local/bloop" >> ~/.bashrc
 
 echo "-Dsbt.coursier.home=./.metals/coursier" >> .jvmopts
-echo "-Dcoursier.cache=./.metals/coursier" >> .jvmopts
+echo "-Dcoursier.cache=$GITPOD_REPO_ROOT/.metals/coursier" >> .jvmopts
 echo "-sbt-dir ./.metals/sbt" >> .sbtopts
 echo "-sbt-boot ./.metals/sbt/boot" >> .sbtopts
 echo "-ivy ./.metals/.ivy2" >> .sbtopts
@@ -27,4 +27,4 @@ bloop compile --cascade root
 METALS_VERSION=0.8.3
 curl -Lo ./.metals/cs https://git.io/coursier-cli-linux && chmod +x ./.metals/cs
 ./.metals/cs fetch org.scalameta:metals_2.12:$METALS_VERSION --cache=./.metals/coursier 
-./.metals/cs fetch org.scalameta:scalafmt-cli:2.4.2 --cache=./.metals/coursier 
+./.metals/cs fetch org.scalameta:scalafmt-cli_2.12:2.4.2 --cache=./.metals/coursier 
