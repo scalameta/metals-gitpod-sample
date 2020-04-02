@@ -5,7 +5,7 @@ lazy val root = (project in file(".")).settings(
       scalaVersion := "2.12.10"
     )
   ),
-  name := "scalatest-example"
+  name := "metals-sample"
 )
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % Test
