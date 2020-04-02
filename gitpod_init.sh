@@ -23,5 +23,8 @@ bloop server &>/dev/null &
 sbt -Dbloop.export-jar-classifiers=sources bloopInstall
 bloop compile --cascade root
 
+# TODO should use the Metals  
+METALS_VERSION=0.8.3
 curl -Lo ./.metals/cs https://git.io/coursier-cli-linux && chmod +x ./.metals/cs
-./.metals/cs launch org.scalameta:metals_2.12:0.8.3 -J-Dcoursier.cache=./.metals/coursier -M scala.meta.metals.DownloadDependencies
+./.metals/cs fetch org.scalameta:metals_2.12:$METALS_VERSION --cache=./.metals/coursier 
+./.metals/cs fetch org.scalameta:scalafmt-cli:2.4.2 --cache=./.metals/coursier 
