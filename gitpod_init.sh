@@ -10,9 +10,9 @@ export PATH=$PATH:/usr/local/openjdk-8/bin:$APPS_DIR
 
 echo "-Dsbt.coursier.home=$METALS_DIR/coursier" >> .jvmopts
 echo "-Dcoursier.cache=$METALS_DIR/coursier" >> .jvmopts
-echo "-sbt-dir $METALS_DIR/sbt" >> .sbtopts
-echo "-sbt-boot $METALS_DIR/sbt/boot" >> .sbtopts
-echo "-ivy $METALS_DIR/.ivy2" >> .sbtopts
+echo "-Dsbt-dir=$METALS_DIR/sbt" >> .jvmopts
+echo "-Dsbt-boot=$METALS_DIR/sbt/boot" >> .jvmopts
+echo "-Divy=$METALS_DIR/.ivy2" >> .jvmopts
 
 curl -Lo $APPS_DIR/cs https://git.io/coursier-cli-linux && chmod +x $APPS_DIR/cs
 
