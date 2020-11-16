@@ -2,7 +2,7 @@ lazy val root = (project in file(".")).settings(
   inThisBuild(
     List(
       organization := "com.example",
-      scalaVersion := "2.12.11"
+      scalaVersion := "2.13.3"
     )
   ),
   name := "metals-sample",
@@ -16,8 +16,9 @@ lazy val root = (project in file(".")).settings(
   )
 )
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % Test
+libraryDependencies += "org.scalameta" %% "munit" % "0.7.17" % Test
+testFrameworks += new TestFramework("munit.Framework")
 
 addCompilerPlugin(
-  "org.scalameta" % "semanticdb-scalac" % "4.3.15" cross CrossVersion.full
+  "org.scalameta" % "semanticdb-scalac" % "4.3.24" cross CrossVersion.full
 )
