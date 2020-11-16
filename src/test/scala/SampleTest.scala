@@ -1,9 +1,9 @@
-class SampleTest extends org.scalatest.FunSuite {
+class SampleTest extends munit.FunSuite {
   test("zigzag") {
-    assert(1 == 1)
+    assertEquals(1, 1)
   }
 
   test("zigzag-fail") {
-    assert(1 == 2)
+    assertEquals(1, 2)
   }
 }

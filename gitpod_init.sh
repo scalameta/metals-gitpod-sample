@@ -2,7 +2,7 @@
 
 METALS_DIR="$GITPOD_REPO_ROOT/.metals"
 APPS_DIR="$METALS_DIR/apps"
-METALS_VERSION="0.9.0"
+METALS_VERSION="0.9.5"
 
 mkdir -p $APPS_DIR
 
@@ -20,7 +20,7 @@ cs install --install-dir $APPS_DIR --only-prebuilt=true bloop
 cs install --install-dir $APPS_DIR sbt
 
 cs fetch org.scalameta:metals_2.12:$METALS_VERSION --cache=$METALS_DIR/coursier 
-cs fetch org.scalameta:scalafmt-cli_2.12:2.4.2 --cache=$METALS_DIR/coursier 
+cs fetch org.scalameta:scalafmt-cli_2.12:2.7.5 --cache=$METALS_DIR/coursier 
 
 sbt -Dbloop.export-jar-classifiers=sources bloopInstall
 bloop compile --cascade root
