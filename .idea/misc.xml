@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PantsLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../twitter/intellij-pants-plugin" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../twitter/pants" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../twitter/pants/src/python/pants" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../pantsbuild-sample" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
