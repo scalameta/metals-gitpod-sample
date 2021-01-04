@@ -1,9 +1,7 @@
 package org.example
 import scala.concurrent.Await
 
-object Main {
-
-  def main(args: Array[String]) {
+@main def hello: Unit = {
 
     val name: Option[String] = Some("Anne")
 
@@ -24,5 +22,4 @@ object Main {
 
     val b = ""
 
-  }
 }
