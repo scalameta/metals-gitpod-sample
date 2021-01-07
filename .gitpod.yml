@@ -1,8 +1,4 @@
-image: openjdk:8
 vscode:
   extensions:
     - scala-lang.scala@0.3.9:kklqw+c/dNRmtTU8B5repw==
     - scalameta.metals@1.9.10:r3gtfBMh7PLpSAzUIaIL3Q==
-tasks:
-- prebuild: source ./gitpod_init.sh 
-- command: source ./gitpod_command.sh

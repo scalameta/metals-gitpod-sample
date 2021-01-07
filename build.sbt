@@ -5,10 +5,7 @@ lazy val root = (project in file(".")).settings(
       scalaVersion := "3.0.0-M3"
     )
   ),
-  name := "metals-sample",
-  scalacOptions ++= Seq(
-    "-Xsemanticdb"
-  )
+  name := "metals-sample"
 )
 
 libraryDependencies += "org.scalameta" %% "munit" % "0.7.20" % Test
