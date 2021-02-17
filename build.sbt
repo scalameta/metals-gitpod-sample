@@ -16,7 +16,7 @@ lazy val root = (project in file(".")).settings(
   )
 )
 
-libraryDependencies += "org.scalameta" %% "munit" % "0.7.21" % Test
+libraryDependencies += "org.scalameta" %% "munit" % "0.7.22" % Test
 testFrameworks += new TestFramework("munit.Framework")
 
 addCompilerPlugin(
