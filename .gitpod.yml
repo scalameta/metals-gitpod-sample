@@ -4,5 +4,5 @@ vscode:
     - scala-lang.scala
     - scalameta.metals
 tasks:
-- prebuild: source ./gitpod_init.sh
+- init: source ./gitpod_init.sh
 - command: source ./gitpod_command.sh
