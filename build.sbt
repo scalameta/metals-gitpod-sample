@@ -1,5 +1,5 @@
 organization := "com.example"
-scalaVersion := "2.13.9"
+scalaVersion := "2.13.10"
 name := "metals-sample"
 scalacOptions ++= Seq(
   "-Yrangepos",
