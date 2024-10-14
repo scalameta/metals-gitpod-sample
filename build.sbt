@@ -14,5 +14,5 @@ libraryDependencies += "org.scalameta" %% "munit" % "1.0.2" % Test
 testFrameworks += new TestFramework("munit.Framework")
 
 addCompilerPlugin(
-  "org.scalameta" % "semanticdb-scalac" % "4.10.1" cross CrossVersion.full
+  "org.scalameta" % "semanticdb-scalac" % "4.10.2" cross CrossVersion.full
 )
