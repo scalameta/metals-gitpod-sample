@@ -1,4 +1,4 @@
-image: openjdk:17-oracle
+image: gitpod/workspace-full
 vscode:
   extensions:
     - scala-lang.scala
