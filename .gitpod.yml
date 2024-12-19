@@ -1,4 +1,4 @@
-image: openjdk:8
+image: openjdk:17
 vscode:
   extensions:
     - scala-lang.scala
