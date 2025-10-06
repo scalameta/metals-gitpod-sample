@@ -1,6 +1,6 @@
 #!/bin/bash
 
-METALS_DIR="$GITPOD_REPO_ROOT/.metals"
+METALS_DIR=".metals"
 APPS_DIR="$METALS_DIR/apps"
 
 mkdir -p $APPS_DIR
