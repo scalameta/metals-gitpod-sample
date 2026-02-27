@@ -10,7 +10,7 @@ scalacOptions ++= Seq(
     baseDirectory.in(ThisBuild).value.toString
 )
 
-libraryDependencies += "org.scalameta" %% "munit" % "1.2.2" % Test
+libraryDependencies += "org.scalameta" %% "munit" % "1.2.3" % Test
 testFrameworks += new TestFramework("munit.Framework")
 
 addCompilerPlugin(
